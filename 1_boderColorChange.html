@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!--利用border-color会自动继承color颜色的性质，
+可以一次性改变color从而改变所有边框的颜色。
+因此：用border来绘制图形，可以方便地改变图的颜色-->
+<head>
+	<title>实现十字添加框</title>
+	<style type="text/css">
+		#box{
+			width: 200px;
+			height: 200px;
+			color: gray;
+			border: 1px solid;
+			position: relative;
+		}
+		#left_top{
+			position: absolute;
+			left: 20px;
+			top: 20px;
+			width: 65px;
+			height: 65px;
+			border-right: 30px solid;
+			border-bottom: 30px solid;
+		}
+		#right_bottom{
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			width: 65px;
+			height: 65px;
+			border-top: 30px solid;
+			border-left: 30px solid;
+		}
+		#box:hover{
+			color:red;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="#">
+		<div id="box">
+			<div id="left_top"></div>
+			<div id="right_bottom"></div>
+		</div>
+	</a>
+</body>
+</html>
