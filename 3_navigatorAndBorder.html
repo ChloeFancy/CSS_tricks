@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+	通过把导航内容浮动到最左侧，并且设置左边距为负值
+-->
+	<title>设置可以调整的导航栏</title>
+	<style type="text/css">
+		div.box{
+			border-left: 150px solid grey;
+			background-color: #eee;
+			padding: 20px;
+			position: relative;
+		}
+		div.navigator{
+			float: left;
+			margin-left:-130px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		<div class="navigator">导航一</div>
+
+		<section>
+			内容内容内容内容内容内容内容内容内容内容内容<br/>内容内容内容内容内容内容内容内容内容
+		</section>
+
+	</div>
+</body>
+</html>
