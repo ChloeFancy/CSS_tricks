@@ -1,0 +1,72 @@
+.remote{
+	position: relative;
+	width: 60%;
+}
+img{
+	width:100%;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.remote a {
+  text-decoration: none;
+  color: #039;
+}
+
+.hotSpot{
+	width:150px;height: 150px;
+	position: absolute;
+	border: 3px double transparent;
+}
+.hotSpot#xin{
+	top: 168px;
+	left: 126px;
+}
+.hotSpot#feng{
+	top: 0px;
+	left: 380px;
+}
+.hotSpot#ni{
+	top: 155px;
+	left: 470px;
+}
+.hotSpot#zheng{
+	top: 50px;
+	left: 200px;
+}
+.hotSpot#aDai{
+	top: 200px;
+	left: 315px;
+}
+a:hover .hotSpot{
+	border-color: #fff;
+}
+
+.link{
+	color: #039;
+	position: absolute;
+	right: -11em;
+	width: 10em;
+	line-height: 1.2em;
+}
+a:hover .link{
+	color: #0066FF;
+	font-weight: bold;
+}
+.hotSpot#xin+div{
+	top: 0;
+}
+.hotSpot#feng+div{
+	top: 1.5em;
+}
+.hotSpot#ni+div{
+	top: 3em;
+}
+.hotSpot#zheng+div{
+	top: 4.5em;
+}
+.hotSpot#aDai+div{
+	top: 6em;
+}
