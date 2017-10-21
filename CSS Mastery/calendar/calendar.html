@@ -66,5 +66,73 @@
 			</tr>
 		</tbody>
 	</table>
+
+	<fieldset>
+		<legend>Your Contact Details</legend>
+		<div>
+			<label for="name">Name:(Required)</label>
+			<input type="text" id="name">
+		</div>
+		<div>
+			<label for="email">Email Address:</label>
+			<input type="text" id="email">
+		</div>
+		<div>
+			<label for="web">Web Address:</label>
+			<input type="text" id="web">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Comments</legend>
+		<div>
+			<label for="message">Message:(Required)</label>
+			<textarea id="message"></textarea>
+		</div>
+
+	</fieldset>
+	<fieldset>
+		<legend>Personal Info</legend>
+		<div>
+			<label for="place">Place of Birth:</label>
+			<select id="place">
+				<option value="1">CHINA</option>
+				<option value="2">USA</option>
+				<option value="3">ENGLAND</option>
+				<option value="4">CANADA</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="date">Date of Birth:</label>
+			<input type="text" name="date" id="date">
+			<select>
+				<option value="jan">January</option>
+				<option value="feb">February</option>
+				<option value="mar">March</option>
+			</select>
+			<label for="year"></label>
+			<input type="text" name="year" id="year">
+		</div>
+
+		<div>
+			<h2>Favorite Color:</h2>
+			<div class="color">
+				<label><input type="checkbox">red</label>
+				<label><input type="checkbox">pink</label>
+				<label><input type="checkbox">purple</label>
+				<label><input type="checkbox">green</label>
+			</div>
+			<div class="color">
+				<label><input type="checkbox">orange</label>
+				<label><input type="checkbox">blue</label>
+				<label><input type="checkbox">yellow</label>
+				<label><input type="checkbox">other</label>
+			</div>
+		</div>
+		<button>提交</button>
+	</fieldset>
+
+
 </body>
 </html>

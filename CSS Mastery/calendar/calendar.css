@@ -42,3 +42,46 @@ td:hover{
 	color: gray;
 	cursor:auto;
 }
+
+/*表单的样式*/
+fieldset{
+	width: 60%;
+}
+label,h2{
+	width: 10em;
+	float: left;/*label本来是行内元素不能设置width，浮动后变成了BFC*/
+	text-align: right;
+	margin-right: 10px;
+}
+h2{
+	font-size:1em;
+	font-weight: normal;
+	cursor:default;
+}
+div{
+	margin: 10px;
+}
+input#message{
+	width:300px;
+	height: 150px;
+}
+div.color{
+	clear: left;
+	display: inline-block;
+	width: 5em;
+}
+div.color label{
+	text-align: left;
+	display: block;
+	float: none;
+}
+textarea#message{
+	width: 300px;
+	height: 10em;
+}
+button{
+	width: 80px;
+	height: 60px;
+	cursor: pointer;
+	float: right;
+}
