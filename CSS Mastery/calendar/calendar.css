@@ -60,10 +60,14 @@ h2{
 }
 div{
 	margin: 10px;
+	position: relative;
 }
-input#message{
-	width:300px;
-	height: 150px;
+input[type="text"]{
+	width: 10em;
+}
+label em{
+	position: absolute;
+	left: 20em;
 }
 div.color{
 	clear: left;
