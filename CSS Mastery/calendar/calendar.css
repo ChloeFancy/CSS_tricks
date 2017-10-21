@@ -1,0 +1,44 @@
+table{
+	border-spacing: 0;
+	color: #333;
+}
+caption{
+	font-weight: bold;
+	margin: none;
+}
+caption a{
+	float:left;
+	text-decoration: none;
+	color: #000;
+}
+caption a:last-child{
+	float: right;
+}
+caption,thead{
+	background-color: #eee;
+	padding: 5px;
+
+}
+thead tr th{
+	width:40px;
+}
+tbody td{
+	text-align: center;
+	border-collapse: separate;
+	border-top:1px solid #eff;
+	border-left:1px solid #eff;
+	border-right:1px solid gray;
+	border-bottom: 1px solid gray;
+	cursor: pointer;
+}
+td:hover{
+	background-color: gray;
+	color: white;
+	border-left-color: black;
+	border-top-color: black;
+}
+.pre,.next{
+	background-color: #eee;
+	color: gray;
+	cursor:auto;
+}
