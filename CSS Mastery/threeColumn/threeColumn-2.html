@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三栏布局的实现——2（全屏）</title>
+	<!--
+		利用三个inline-block元素来实现三栏，将最左最右的放到wrapper的左右内边距范围里。
+		但是，由于内联元素的右外边距不为零，因此需要用负的右外边距消除两个元素之间的间隙，
+	不然元素会分布在两行上。
+	-->
+	<style type="text/css">
+		*{
+			margin:0;
+		}
+		#wrapper{
+			width:500px;/*内容宽度*/
+			border:1px solid red;
+			padding-left: 300px;
+			padding-right: 400px;
+		}
+		#leftPart,#centerPart,#rightPart{
+			text-align: center;
+			display: inline-block;
+			margin-right: -2px;
+		}
+		#leftPart{
+			border:1px solid blue;
+			width: 300px;
+			margin-left: -300px;
+		}
+		#centerPart{
+			width:100%;
+		}
+		#rightPart{
+			border:1px solid blue;
+			width: 400px;
+			margin-right: -400px;
+		}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="leftPart">left（width: 300px;）</div><div id="centerPart">center（width: 500px;）</div><div id="rightPart">right（width: 400px;）</div>
+</div>
+</body>
+</html>

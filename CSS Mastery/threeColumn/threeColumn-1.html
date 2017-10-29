@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三栏布局的实现——1（等高）</title>
+	<!--
+		通过一个很大的下内边距将元素的高度增大很多，再将下外边距设置为一个负值，
+	因此在外部wrapper裁剪的时候就会与最低的那一个外边距线的上边界对齐。
+		这也是为什么三栏的border显示不完全的原因。
+	-->
+	<style type="text/css">
+		div#wrapper{
+			width:80%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		div.primary{
+			float:left;
+			width:59%;
+		}
+		div.secondary{
+			float:right;
+			width:38%;
+		}
+		div.primary,div.secondary{
+			border:3px double black;
+			padding-bottom:4000px;
+			margin-bottom:-3980px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<div class="primary">
+		<div class="primary">
+			<h1>Someone's Somebody</h1>
+			<br>专辑：Wonderland EP
+			<br>歌手：<h2>Jasmine Thompson</h2>
+			<br>来源：我喜欢的音乐
+			<br>Even though I want to
+			<br>'Cause you brought someone new
+			<br>当你带来你的新人
+			<br>And I can't ignore ya
+			<br>我也完全不能视若无睹
+			<br>Even though I'm trying to
+			<br>即使我逼迫自己
+			<br>I might need a doctor
+			<br>我想我需要一个医生
+			<br>So nervous next to you
+			<br>因为在你身旁的我是如此的紧张
+		</div>
+
+		<div class="secondary">
+			Hell and hello
+			<br>地狱与天堂
+			<br>Yeah, those two words
+			<br>这两个词
+			<br>Are oh so close
+			<br>是如此的相似
+			<br>Oh baby, can you tell?
+			<br>噢亲爱的 你可以告诉我
+			<br>That I feel pain
+			<br>为什么我感受到这么大的痛苦
+			<br>I can't let go
+			<br>而且这痛难以逝去
+
+
+			<br>I won't let you be someone's somebody
+			<br>我不会让你成为其他人的“某人”
+			<br>Can't see you with no one else
+			<br>我不能看你和别人在一起
+			<br>No, nobody, hmm-hmm
+			<br>任何人都不行
+			<br>Someone's somebody
+			<br>你不能成为其他人的爱人
+			<br>Should tell you that you can't leave this party
+			<br>我应该告诉你你不能离开这个派对
+			<br>With her
+			<br>特别是和她
+
+
+
+			<br>And I got some feelings
+			<br>我有一些奇妙的感觉
+			<br>While you're holding hands right now
+			<br>当你握着我的手
+			<br>Now that I was healing
+			<br>现在我的伤开始愈合
+			<br>'Til you both came around
+			<br>当你们都在我的周围
+			<br>Don't you call her baby
+			<br>你不能叫她宝贝
+			<br>Boy, you better watch your mouth
+			<br>男孩 你最好注意你的言语
+			<br>'Cause it's too soon, way too soon to say it
+			<br>因为太接近了 你就要说出那句
+		</div>
+	</div>
+
+	<div class="secondary">
+		<br>And I got some feelings
+		<br>我有一些奇妙的感觉
+		<br>While you're holding hands right now
+		<br>当你握着我的手
+		<br>Now that I was healing
+		<br>现在我的伤开始愈合
+		<br>'Til you both came around
+		<br>当你们都在我的周围
+		<br>Don't you call her baby
+		<br>你不能叫她宝贝
+		<br>Boy, you better watch your mouth
+		<br>男孩 你最好注意你的言语
+		<br>'Cause it's too soon, way too soon to say it
+		<br>因为太接近了 你就要说出那句
+	</div>
+</div>
+
+</body>
+</html>

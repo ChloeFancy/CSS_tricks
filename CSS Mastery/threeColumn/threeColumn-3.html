@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三栏布局的实现——2（全屏）</title>
+	<!--
+		利用三个浮动元素来实现三栏，将最左最右的放到center中心元素的左右外边距范围内。
+		1.水平浮动元素的margin:html中，后一个浮动元素的最外右边界去贴前一个浮动元素的最左外边界
+	，所以将左边div的margin-left设为-100%。
+		2.不知道为什么，right栏的margin-left也和center的最右外边界贴在一起了？
+			想通了：因为html中right在center的后面，因此right不能比center更左，
+		因此right的左外边界能贴的margin-right只能是center的，如果要贴left的，就会比center靠左，不符合浮动规则。
+	-->
+	<style type="text/css">
+		*{
+			margin:0;
+		}
+
+		#centerWrapper{
+			border:1px solid red;
+			float:left;
+			width:calc(100% - 2px);
+			text-align: center;
+		}
+
+		#leftPart{
+			float:left;
+			width: 300px;
+			margin-left:-100%;
+			text-align: center;
+		}
+
+		#centerPart{
+			margin-left: 300px;
+			margin-right: 400px;
+		}
+
+		#rightPart{
+			float:left;
+			width: 400px;
+			margin-left: -400px;
+			text-align: center;
+		}
+
+		div#id1,div#id2,div#id3{
+			width:100px;
+			height: 100px;
+			float:left;
+		}
+		#id1{
+			margin-left:100px;
+			background-color: pink;
+			margin-right: 100px;
+		}
+		#id2{
+			margin-left:-300px;
+			border:1px solid black;
+		}
+		#id3{
+			margin-left:-100px;
+			border:1px solid black;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="centerWrapper">
+		<div id="centerPart">center（width: 500px;）</div>
+	</div>
+	<div id="leftPart">left（width: 300px;）</div>
+
+	<div id="rightPart">right（width: 400px;）</div>
+
+	<div class="showbox">
+		<div id="id1">1</div>
+		<div id="id2">2</div>
+		<div id="id3">3</div>
+	</div>
+
+	<div class="showbox">
+		<div id="id1">1</div>
+		<div id="id2" style="margin-right:400px;">2</div>
+		<div id="id3">3</div>
+	</div>
+
+</body>
+</html>
